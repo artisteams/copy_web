@@ -1,0 +1,421 @@
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*-共通（前提）-*/
+body{
+	box-sizing: border-box;
+	overflow:auto;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+}
+
+/*---------*/
+a {
+	text-decoration: none
+}
+
+/*タップハイライトを非表示に*/
+a {
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+/*---------*/
+.new-notification {
+  color: red;
+}
+
+/*-フェードイン表示-*/
+.fadeInDown {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:2s;
+ -ms-animation-duration:2s;
+ animation-duration:2s;
+ -webkit-animation-name: fadeInDown;
+ animation-name: fadeInDown;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(20px); -ms-transform: translateY(20px); transform: translateY(20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+@media screen and ( max-width:30em) {
+    /* ~480px（スマホ縦） */
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*-共通-*/
+
+.Wrapper {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.Wrapper-A {
+	box-sizing: border-box;
+	width: 100%;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+	font-size: 3.52645vw;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.Wrapper-A p {
+	letter-spacing: 1.5px;
+}
+
+.title_first-letter {
+	font-size: 7.55668vw;
+	color: #fff;
+    text-shadow:
+      black 1px 1px 0px,
+      black -1px 1px 0px,
+      black -1px -1px 0px,
+      black 1px -1px 0px,
+      black 1px 0px 0px,
+      black 0px 1px 0px,
+      black -1px 0px 0px,
+      black 0px -1px 0px;
+}
+
+.text-pc {
+  display: none;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*contact*/
+
+.contact_wrapper {
+/*	border-top: 1.25px solid #fff;
+	border-bottom: 1.25px solid #fff;*/
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+  font-size: 3.52645vw;
+}
+
+.contact_container {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://wam-hasard.com/set/img/sp/contact-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: left left;
+}
+
+.container-skin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact_box {
+	padding:0 5.976vw;
+  height: 100vh;
+}
+
+.contact_box div{
+/*  padding: 4.976vw;*/
+}
+
+.contact_box h2 {
+  margin: 5.976vw 0;
+  font-size: 7.46667vw;
+  font-weight: bold;
+  letter-spacing: 10px;
+  font-family: serif;
+}
+
+.contact_wrapper p {
+  margin: 8.1875vw 0;
+  letter-spacing: 1.5px;
+}
+
+address {
+  text-align: center;
+  font-size: 6.66667vw;
+  margin: 34vw 0 8vw 0;
+  letter-spacing: 1.5px;
+}
+
+.contact-message {
+  text-align: center;
+  margin-top: 6.11111vw;
+  font-weight: bold;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*for_home*/
+
+#for_home a {
+  text-decoration: none;
+  position: fixed;
+  right: 14px;
+  width: 11vw;
+  height: 11vw;
+  bottom: 10vw;
+  background: #333333;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 11vw;
+  font-size: calc(3vw + 1vh);
+  text-align: center;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:30em) and ( max-width:70em) {
+    /*　480px~1120px スマホ横 タブレット縦・横　*/
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*contact*/
+
+.contact_wrapper {
+/*	border-top: 1.25px solid #fff;
+	border-bottom: 1.25px solid #fff;*/
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+  font-size: 2.08333vw;
+}
+
+.contact_container {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://wam-hasard.com/set/img/tab/contact-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.container-skin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact_box {
+	padding: 0 3.65625vw;
+  height: 100vh;
+}
+
+.contact_box div{
+  padding: 2.676vw;
+  margin-bottom: 3.52645vw;
+}
+
+.contact_box h2 {
+  margin: 3.976vw 0 3.676vw 0;
+  font-size: 5.20833vw;
+  font-weight: 800;
+  letter-spacing: 10px;
+  font-family: serif;
+}
+
+.contact_wrapper p {
+  margin-bottom: 2.1875vw;
+  letter-spacing: 1.5px;
+}
+
+address {
+  text-align: center;
+  font-size: 3.90625vw;
+  margin: 25vw 0 6vw 0;
+  letter-spacing: 1.5px;
+}
+
+.contact-text {
+  padding-left: 20vw;
+}
+
+.contact-message {
+  text-align: center;
+  margin-top: 4.09956vw;
+  font-weight: bold;
+}
+
+.pc-tab{
+  display: none;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*for_home*/
+
+#for_home a {
+  text-decoration: none;
+  position: fixed;
+  right: 14px;
+  width: 8vw;
+  height: 8vw;
+  bottom: 8vw;
+  background: #333333;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 8vw;
+  font-size: calc(2.4vw + 1vh);
+  text-align: center;
+}
+
+
+/*-スクロールバーのカスタマイズ-*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+   border-radius: 10px;
+   box-shadow: inset 0 0 5px rgba(0, 0, 0, .1);
+}
+::-webkit-scrollbar-thumb {
+   background-color: rgba(0, 0, 50, .3);
+   border-radius: 10px;
+   box-shadow:0 0 0 1px rgba(255, 255, 255, .3);
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 70em) {
+    /*　1120px~　タブレット横　PC全般 */
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*contact*/
+
+.contact_wrapper {
+/*	border-top: 1.25px solid #fff;
+	border-bottom: 1.25px solid #fff;*/
+	height: 100vh;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+  font-size: 1.04167vw;
+}
+
+.contact_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://wam-hasard.com/set/img/pc/contact-bg.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
+
+.container-skin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.contact_box {
+  width: 75vw;
+  height: 75vh;
+	padding: 2.65625vw 2.65625vw 0 2.65625vw;
+  overflow: auto;
+}
+
+.contact_box h2 {
+  margin-bottom: 4.09956vw;
+  font-size: 2.8125vw;
+	letter-spacing: 10px;
+  font-weight: 800;
+  font-family: serif;
+}
+
+.contact_wrapper p {
+  margin-bottom: 2.1875vw;
+  letter-spacing: 1.5px;
+}
+
+address {
+  text-align: center;
+  font-size: 2.19619vw;
+  margin-bottom: 4.09956vw;
+  letter-spacing: 1.5px;
+}
+
+.contact-text {
+  padding-left: 20vw;
+}
+
+.contact-message {
+  text-align: center;
+  margin-top: 4.09956vw;
+  font-weight: bold;
+}
+
+.pc-tab{
+  display: none;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*for_home*/
+
+#for_home a {
+display: none;
+}
+
+
+/*-スクロールバーのカスタマイズ-*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+   border-radius: 10px;
+   box-shadow: inset 0 0 5px rgba(0, 0, 0, .1);
+}
+::-webkit-scrollbar-thumb {
+   background-color: rgba(0, 0, 50, .3);
+   border-radius: 10px;
+   box-shadow:0 0 0 1px rgba(255, 255, 255, .3);
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/

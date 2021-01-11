@@ -1,0 +1,506 @@
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*-共通（前提）-*/
+body{
+  box-sizing: border-box;
+  overflow:auto;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+}
+
+/*---------*/
+a {
+  text-decoration: none;
+  outline: none;
+  color: #777777;
+}
+
+a:focus, *:focus {
+ outline:none; 
+}
+
+/*タップハイライトを非表示に*/
+a {
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+/*---------*/
+.new-notification {
+  color: red;
+}
+
+/*-フェードイン表示-*/
+.fadeInDown {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:2s;
+ -ms-animation-duration:2s;
+ animation-duration:2s;
+ -webkit-animation-name: fadeInDown;
+ animation-name: fadeInDown;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(20px); -ms-transform: translateY(20px); transform: translateY(20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+@media screen and ( max-width:30em) {
+    /* ~480px（スマホ縦） */
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*-共通-*/
+
+.Wrapper {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.Wrapper-A {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+  font-size: 3.52645vw;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.Wrapper-A p {
+  letter-spacing: 1.5px;
+}
+
+.title_first-letter {
+  font-size: 7.55668vw;
+  color: #fff;
+    text-shadow:
+      black 1px 1px 0px,
+      black -1px 1px 0px,
+      black -1px -1px 0px,
+      black 1px -1px 0px,
+      black 1px 0px 0px,
+      black 0px 1px 0px,
+      black -1px 0px 0px,
+      black 0px -1px 0px;
+}
+
+.text-pc {
+  display: none;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*message*/
+
+.message_wrapper {
+/*  border-top: 1.25px solid #fff;
+  border-bottom: 1.25px solid #fff;*/
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+  font-size: 3.52645vw;
+}
+
+.message_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://wam-hasard.com/set/img/sp/message-bg.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 64% 10%;
+}
+
+.container-skin {
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.message_box {
+  padding:0 5.976vw;
+}
+
+.message_box h2 {
+  margin: 5.976vw 0;
+  font-size: 7.46667vw;
+  font-weight: 800;
+  letter-spacing: 10px;
+  font-family: serif;
+}
+
+.message_box h3 {
+  font-size: 6.58659vw;
+  letter-spacing: 10px;
+  font-weight: 800;
+  margin-bottom: 7.23465vw;
+  line-height: 12.5vw;
+}
+
+.message_box h4 {
+  font-size: 5.03778vw;
+  letter-spacing: 8px;
+  font-weight: 600;
+  margin-bottom: 4.03023vw;
+}
+
+.message_box h4:nth-child(1) {
+  font-size: 5.03778vw;
+  letter-spacing: 8px;
+  font-weight: 600;
+  margin-bottom: 4.03023vw;
+  margin-top: 18.13602vw;
+}
+
+.font-s {
+  font-size: 2.8vw;
+}
+
+.message_box time {
+  display: block;
+  font-size: 2.8vw;
+  letter-spacing: 1.5px;
+  color: #00138B;
+  margin: 1.4vw 0;
+}
+
+time .c-bule {
+  font-size: 5.0378vw;
+  letter-spacing: 6px;
+  font-weight: 600;
+}
+
+.message-text p {
+  font-size: 4.03023vw;
+  letter-spacing: 3px;
+  margin-bottom: 18.13602vw;
+  line-height: 9.0529vw;
+}
+
+.sp {
+  display: none;
+}
+
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*for_home*/
+
+#for_home a {
+  text-decoration: none;
+  position: fixed;
+  right: 14px;
+  width: 11vw;
+  height: 11vw;
+  bottom: 10vw;
+  background: #333333;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 11vw;
+  font-size: calc(3vw + 1vh);
+  text-align: center;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:30em) and ( max-width:70em) {
+    /*　480px~1120px スマホ横 タブレット縦・横　*/
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*message*/
+
+.message_wrapper {
+/*  border-top: 1.25px solid #fff;
+  border-bottom: 1.25px solid #fff;*/
+  height: 100vh;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+  font-size: 2.08333vw;
+}
+
+.message_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://wam-hasard.com/set/img/tab/message-bg.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-skin {
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.message_box {
+  padding: 0 3.65625vw;
+}
+
+.message_box div{
+  padding: 2.676vw;
+}
+
+.message_box h2 {
+  font-size: 5.20833vw;
+  font-weight: 800;
+  letter-spacing: 10px;
+  font-family: serif;
+  margin: 3.976vw 0 3.676vw 0;
+}
+
+.message_box h3 {
+  font-size: 4.16667vw;
+  letter-spacing: 10px;
+  font-weight: 600;
+  margin-bottom: 1.04167vw;
+}
+
+.message_box h4 {
+  font-size: 3.125vw;
+  letter-spacing: 10px;
+  font-weight: 600;
+  margin-bottom: 2.08333vw;
+}
+
+.message_box h4:nth-child(1) {
+  font-size: 3.125vw;
+  letter-spacing: 10px;
+  font-weight: 600;
+  margin-bottom: 2.08333vw;
+  margin-top: 5.352vw;
+}
+
+.font-s {
+  font-size: 2.34375vw;
+}
+
+.message_wrapper time {
+  display: block;
+  font-size: 2.34375vw;
+  letter-spacing: 1.5px;
+  color: #00138B;
+  margin: 1.17vw 0;
+}
+
+time .c-bule {
+  font-size: 2.60417vw;
+  letter-spacing: 6px;
+  font-weight: 600;
+}
+
+.message-text p {
+  font-size: 2.08333vw;
+  letter-spacing: 3px;
+  margin-bottom: 3.75vw;
+  line-height: 6.16667vw;
+}
+
+
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*for_home*/
+
+#for_home a {
+  text-decoration: none;
+  position: fixed;
+  right: 14px;
+  width: 8vw;
+  height: 8vw;
+  bottom: 8vw;
+  background: #333333;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 8vw;
+  font-size: calc(2.4vw + 1vh);
+  text-align: center;
+}
+
+/*-スクロールバーのカスタマイズ-*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+   border-radius: 10px;
+   box-shadow: inset 0 0 5px rgba(0, 0, 0, .1);
+}
+::-webkit-scrollbar-thumb {
+   background-color: rgba(0, 0, 50, .3);
+   border-radius: 10px;
+   box-shadow:0 0 0 1px rgba(255, 255, 255, .3);
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 70em) {
+    /*　1120px~　タブレット横　PC全般 */
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*message*/
+
+.message_wrapper {
+/*  border-top: 1.25px solid #fff;
+  border-bottom: 1.25px solid #fff;*/
+  height: 100vh;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+  font-size: 1.04167vw;
+}
+
+.message_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://wam-hasard.com/set/img/pc/message-bg.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-skin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.message_box {
+  width: 75vw;
+  padding: 2.65625vw;
+  overflow: auto;
+}
+
+.message_box h2 {
+  margin-bottom: 2.1875vw;
+  font-size: 2.8125vw;
+  letter-spacing: 10px;
+  font-weight: 800;
+  font-family: serif;
+}
+
+.message_box h3 {
+  font-size: 1.66667vw;
+  letter-spacing: 10px;
+  font-weight: 600;
+  margin-bottom: 0.41667vw;
+}
+
+.message_box h4 {
+  font-size: 1.25vw;
+  letter-spacing: 10px;
+  font-weight: 600;
+  margin-bottom: 0.83333vw;
+}
+
+.message_box h4:nth-child(1) {
+  font-size: 1.25vw;
+  letter-spacing: 10px;
+  font-weight: 600;
+  margin-bottom: 0.83333vw;
+  margin-top: 3.75vw;
+}
+
+.font-s {
+  font-size: 0.9375vw;
+}
+
+.message_wrapper time {
+  display: block;
+  font-size: 0.9375vw;
+  letter-spacing: 1.5px;
+  color: #00138B;
+  margin: 0.47vw 0;
+}
+
+time .c-bule {
+  font-size: 1.04167vw;
+  letter-spacing: 6px;
+  font-weight: 600;
+}
+
+.message-text p {
+  font-size: 0.83333vw;
+  letter-spacing: 3px;
+  margin-bottom: 3.75vw;
+  line-height: 2.26667vw;
+}
+
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*for_home*/
+
+#for_home a {
+  text-decoration: none;
+  position: fixed;
+  right: 14px;
+  width: 42px;
+  height: 42px;
+  bottom: 16px;
+  background: #333333;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 42px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*-スクロールバーのカスタマイズ-*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+   border-radius: 10px;
+   box-shadow: inset 0 0 5px rgba(0, 0, 0, .1);
+}
+::-webkit-scrollbar-thumb {
+   background-color: rgba(0, 0, 50, .3);
+   border-radius: 10px;
+   box-shadow:0 0 0 1px rgba(255, 255, 255, .3);
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/

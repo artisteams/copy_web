@@ -1,0 +1,478 @@
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*-共通（前提）-*/
+body{
+	box-sizing: border-box;
+	overflow:auto;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+}
+
+/*---------*/
+a {
+  text-decoration: none;
+  outline: none;
+  color: #777777;
+}
+
+/*タップハイライトを非表示に*/
+a {
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+/*---------*/
+.new-notification {
+  color: red;
+}
+
+/*-フェードイン表示-*/
+.fadeInDown {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:2s;
+ -ms-animation-duration:2s;
+ animation-duration:2s;
+ -webkit-animation-name: fadeInDown;
+ animation-name: fadeInDown;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(20px); -ms-transform: translateY(20px); transform: translateY(20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+@media screen and ( max-width:30em) {
+    /* ~480px（スマホ縦） */
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*-共通-*/
+
+.Wrapper {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.Wrapper-A {
+	box-sizing: border-box;
+	width: 100%;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+	font-size: 3.52645vw;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.Wrapper-A p {
+	letter-spacing: 1.5px;
+}
+
+.title_first-letter {
+	font-size: 7.55668vw;
+	color: #fff;
+    text-shadow:
+      black 1px 1px 0px,
+      black -1px 1px 0px,
+      black -1px -1px 0px,
+      black 1px -1px 0px,
+      black 1px 0px 0px,
+      black 0px 1px 0px,
+      black -1px 0px 0px,
+      black 0px -1px 0px;
+}
+
+.text-pc {
+  display: none;
+}
+
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*sponsorship*/
+
+.sponsorship_wrapper {
+  width: 100vw;
+  height: 102vh;　
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+  font-size: 3.52645vw;
+}
+
+.sponsorship_container {
+  height: 102vh;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://wam-hasard.com/set/img/sp/sponsorship-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-skin {
+  width: 100vw;
+  height: 102vh;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sponsorship_box {
+	padding:0 5.976vw;
+}
+
+.sponsorship_box div{
+/*  padding: 4.976vw;*/
+}
+
+.sponsorship_box h2 {
+  margin: 5.976vw 0 8.24176vw 0;
+  font-size: 7.46667vw;
+  font-weight: bold;
+  letter-spacing: 6px;
+  font-family: serif;
+}
+
+.sponsorship_wrapper p {
+  letter-spacing: 2px;
+}
+
+.catchphrase{
+  font-size: 3.88889vw;
+  line-height: 9.89011vw;
+  font-weight: bold;
+}
+
+.catchphrase p{
+  margin: 5.1875vw 0;
+  letter-spacing: 1.2px;
+}
+
+.sponsorship_box h3 {
+  letter-spacing: 3px;
+  margin-bottom: 8.24176vw;
+}
+
+.sponsorship_box h4 {
+  font-size: 3.70879vw;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.sponsorship_box h5 {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.sponsor{
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  flex-wrap:wrap;
+  width: 88vw;
+  margin-bottom: 0vw;
+  padding: 0;
+  padding: 4.976vw 0 8.24176vw 2.5vw;
+}
+
+.sponsor p{
+  margin: 1.5vw 4vw;
+}
+
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*for_home*/
+
+#for_home a {
+  text-decoration: none;
+  position: fixed;
+  right: 14px;
+  width: 11vw;
+  height: 11vw;
+  bottom: 10vw;
+  background: #333333;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 11vw;
+  font-size: calc(3vw + 1vh);
+  text-align: center;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:30em) and ( max-width:70em) {
+    /*　480px~1120px スマホ横 タブレット縦・横　*/
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*sponsorship*/
+
+.sponsorship_wrapper {
+/*	border-top: 1.25px solid #fff;
+	border-bottom: 1.25px solid #fff;*/
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+  font-size: 2.08333vw;
+}
+
+.sponsorship_container {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://wam-hasard.com/set/img/tab/sponsorship-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.container-skin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sponsorship_box {
+	padding: 0 3.65625vw;
+  height: 100vh;
+}
+
+.sponsorship_box div{
+  padding: 2.676vw;
+}
+
+.sponsorship_box h2 {
+  margin: 3.976vw 0 3.676vw 0;
+  font-size: 5.20833vw;
+  font-weight: 800;
+  letter-spacing: 10px;
+  font-family: serif;
+}
+
+.sponsorship_wrapper p {
+  margin-bottom: 2.1875vw;
+  letter-spacing: 2px;
+}
+
+.catchphrase{
+  font-size: 2.34375vw;
+  font-weight: bold;
+}
+
+.sponsorship_box h3 {
+  letter-spacing: 3px;
+  padding: 2.676vw;
+}
+
+.sponsorship_box h4 {
+  font-size: 2.21354vw;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 4.976vw;
+}
+
+.sponsorship_box h5 {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.sponsor{
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  flex-wrap:wrap;
+  padding: 0;
+  padding: 4.976vw 0;
+  margin-bottom: 0vw;
+}
+
+.sponsor p{
+  margin: 1.5vw 4vw;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*for_home*/
+
+#for_home a {
+  text-decoration: none;
+  position: fixed;
+  right: 14px;
+  width: 8vw;
+  height: 8vw;
+  bottom: 8vw;
+  background: #333333;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 8vw;
+  font-size: calc(2.4vw + 1vh);
+  text-align: center;
+}
+
+
+/*-スクロールバーのカスタマイズ-*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+   border-radius: 10px;
+   box-shadow: inset 0 0 5px rgba(0, 0, 0, .1);
+}
+::-webkit-scrollbar-thumb {
+   background-color: rgba(0, 0, 50, .3);
+   border-radius: 10px;
+   box-shadow:0 0 0 1px rgba(255, 255, 255, .3);
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 70em) {
+    /*　1120px~　タブレット横　PC全般 */
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*sponsorship*/
+
+.sponsorship_wrapper {
+/*	border-top: 1.25px solid #fff;
+	border-bottom: 1.25px solid #fff;*/
+	height: 115vh;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+  font-size: 1.04167vw;
+}
+
+.sponsorship_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://wam-hasard.com/set/img/pc/sponsorship-bg.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  height: 115vh;
+}
+
+.container-skin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 115vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sponsorship_box {
+  width: 78vw;
+	padding: 2.65625vw 2.65625vw 0 2.65625vw;
+  overflow: auto;
+}
+
+.sponsorship_box h2 {
+  margin-bottom: 2.1875vw;
+  font-size: 2.8125vw;
+	letter-spacing: 10px;
+  font-weight: 800;
+  font-family: serif;
+}
+
+.sponsorship_box h3 {
+  letter-spacing: 3px;
+  margin-bottom: 2.1875vw;
+}
+
+.sponsorship_box h4 {
+  font-size: 1.45833vw;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 2.1875vw;
+}
+
+.sponsorship_box h5 {
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 2.1875vw;
+}
+
+.sponsorship_wrapper p {
+  margin-bottom: 2.1875vw;
+  letter-spacing: 1.5px;
+}
+
+.catchphrase{
+  font-size: 1.45833vw;
+}
+
+.sponsor{
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  flex-wrap:wrap;
+  margin: 2.1875vw 0;
+  font-size: 0.83333vw;
+}
+
+.sponsor p{
+  margin: 1.5vw 4vw;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*for_home*/
+
+#for_home a {
+display: none;
+}
+
+
+/*-スクロールバーのカスタマイズ-*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+   border-radius: 10px;
+   box-shadow: inset 0 0 5px rgba(0, 0, 0, .1);
+}
+::-webkit-scrollbar-thumb {
+   background-color: rgba(0, 0, 50, .3);
+   border-radius: 10px;
+   box-shadow:0 0 0 1px rgba(255, 255, 255, .3);
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
